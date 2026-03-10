@@ -1,0 +1,263 @@
+/* Color Palette
+tangerine dream: #ff9861ff; (warm orange) - Accent color
+dry sage: #bdcc9bff; (soft green) - Section backgrounds
+aquamarine: #7affd5ff; (mint green) - Header/Footer backgrounds
+pale slate: #bdb0b4ff; (soft mauve) - Body background
+rose kiss: #ff6193ff; (pink) - Secondary accent
+*/
+
+/* Global styles */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bdb0b4ff;
+  color: #2c3e50; /*dark text to read*/
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.2em;
+  color: #ff6193ff; /* rose kiss for main heading */
+}
+
+h2 {
+  font-size: 2.2em;
+  color: #ff9861ff; /* tangerine dream for section headings */
+  border-bottom: 3px solid #7affd5ff; /* aquamarine border */
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #ff6193ff; /* rose kiss for subheadings */
+  margin-bottom: 5px;
+}
+
+/* Content Wrapper */
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+/* Column Styles */
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+
+.column-wide {
+  width: 70%;
+  float: left;
+  min-height: 225px;
+}
+
+/* Header & Footer */
+header {
+  background-color: #7affd5ff; /* aquamarine */
+  color: #2c3e50;
+}
+
+header h1 {
+  color: #ff6193ff; /* rose kiss */
+  margin: 0;
+}
+
+header h2 {
+  color: #ff9861ff; /* tangerine dream */
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+header img {
+  border-radius: 50%; /* This creates circle */
+
+  /* width: 300px;
+  height: 300px; /* height equal to width for perfect circle 
+  object-fit: cover; /* This ensures the image covers the area without stretching insanely 
+  float: left;
+  margin-right: 30px ; fixed in html file w column ; */
+  border: 5px solid #ff6193ff; /* rose kiss border */
+}
+
+.profile-links p {
+  color: #2c3e50;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #7affd5ff; /* aquamarine */
+  color: #2c3e50;
+  text-align: center;
+}
+
+footer h2 {
+  color: #ff6193ff; /* rose kiss */
+  border-bottom: 3px solid #ff9861ff; /* tangerine dream border */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-links a {
+  padding: 10px;
+  display: inline-block;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #ff6193ff; /* rose kiss on hover */
+}
+
+/* Work Experience */
+.work-section {
+  background-color: #bdcc9bff; /* dry sage */
+  padding: 20px 0;
+}
+
+.job-item {
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3); /*  transparentish white */
+  border-radius: 8px;
+  border-left: 5px solid #ff6193ff; /* rose kiss accent */
+}
+
+.job-item .company {
+  font-weight: 600;
+  color: #ff6193ff; /* rose kiss */
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.job-item .date {
+  color: #7f8c8d;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.job-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.job-item li {
+  margin-bottom: 5px;
+}
+
+.skills-tags {
+  font-size: 0.9em;
+  color: #2c3e50;
+  border-top: 1px solid #ff9861ff; /* tangerine dream border */
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+/* Education */
+.education-section {
+  background-color: #ff9861ff; /* tangerine dream */
+  color: #2c3e50;
+  padding: 20px 0;
+}
+
+.education-section h2 {
+  color: #ff6193ff; /* rose kiss */
+  border-bottom: 3px solid #7affd5ff; /* aquamarine border */
+}
+
+.education-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.education-item h3 {
+  color: #ffffff; /* white for contrast */
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.education-item .degree {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #2c3e50;
+}
+
+.education-item .grade {
+  color: #ff6193ff; /* rose kiss */
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.education-item .date {
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.language-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border-left: 3px solid #7affd5ff; /* aquamarine accent */
+}
+
+.language-item strong {
+  color: #ff6193ff; /* rose kiss */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+  }
+
+  header h1,
+  header h2 {
+    text-align: center;
+  }
+
+  .contact-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
