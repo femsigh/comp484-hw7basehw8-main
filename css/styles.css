@@ -84,7 +84,7 @@ h3 {
 
 /* Content Wrapper */
 .content-wrap {
-  max-width: 950px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 50px;
   overflow: hidden;
@@ -92,13 +92,13 @@ h3 {
 
 /* Column Styles */
 .column-narrow {
-  width: 30%;
+  width: 40%;
   float: left;
   min-height: 175px;
 }
 
 .column-wide {
-  width: 70%;
+  width: 60%;
   float: left;
   min-height: 225px;
 }
@@ -133,6 +133,7 @@ header img {
   border: 15px solid #ff6193ff;
   width: 100%; /* fill the column-narrow width */
   aspect-ratio: 1 / 1; /* forces square for perfect circle */
+  margin-right: 5px;
 }
 
 .profile-links p {
@@ -169,11 +170,12 @@ footer h2 {
 }
 
 /* Work Experience */
+
 .work-section {
-  /*gradient overlay with dry sge w alpha transparency + bckground image*/
+  /* Gradient overlay - 90% opacity (10% transparent) */
   background:
-    linear-gradient(rgba(189, 204, 155, 0.8), rgba(189, 204, 155, 0.8)),
-    url("../images/bgkhw8.jpg") center/cover fixed;
+    linear-gradient(rgba(189, 204, 155, 0.9), rgba(189, 204, 155, 0.9)),
+    url("../images/bgkhw8.jpg") center/cover no-repeat;
   padding: 20px 0;
 }
 
@@ -234,7 +236,7 @@ footer h2 {
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-  border-left: 3px solid #ff9861ff;
+  border-left: 3px solid #bdb0b4ff;
 }
 
 .education-item h3 {
