@@ -11,20 +11,35 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- External stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
-    <!-- intro-->
-    <header>
+    <!-- Fixed Navigation -->
+    <nav class="fixed-nav">
       <div class="content-wrap">
-        <!-- Image w 1st column-narrow -->
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="resumehw8.pdf" download>Download Resume (PDF Version)</a>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home">
+      <div class="content-wrap">
         <img
           class="column-narrow"
           src="images/cs484hw6.jpeg"
           alt="Annette Ayzman"
         />
-        <!-- text content w 1st column-wide -->
         <div class="column-wide">
           <h1>Annette Ayzman</h1>
           <h2>Student, Computer Science</h2>
@@ -38,18 +53,15 @@
             <p>www.linkedin.com/in/annette-ayzman</p>
           </div>
         </div>
-        <!-- end 1st column-wide -->
       </div>
-      <!-- end 1st content-wrap -->
     </header>
 
     <main>
       <!-- WORK EXPERIENCE -->
-      <section class="work-section">
+      <section class="work-section" id="experience">
         <div class="content-wrap">
           <h2>Experience</h2>
 
-          <!-- Job: Budtender at Maven Genetics -->
           <div class="job-item">
             <div class="column-narrow">
               <h3>Budtender</h3>
@@ -75,16 +87,13 @@
             </div>
           </div>
 
-          <!-- Work: CSUN Vex Robotics Club -->
           <div class="job-item">
             <div class="column-narrow">
-              <!--2nd column wrap-->
               <h3>Officer - Webmaster</h3>
               <p class="company">CSUN Vex Robotics Club</p>
               <p class="date">Jan 2021 – Jan 2022</p>
             </div>
             <div class="column-wide">
-              <!--2nd column content-->
               <p>Associated with California State University, Northridge</p>
               <ul>
                 <li>Was voted in as an Officer for CSUN Vex Robotics</li>
@@ -93,23 +102,19 @@
             </div>
           </div>
         </div>
-        <!-- end 2nd content-wrap & 2nd column-wide -->
       </section>
 
       <!-- EDUCATION -->
-      <section class="education-section">
+      <section class="education-section" id="education">
         <div class="content-wrap">
           <h2>Education</h2>
 
-          <!-- CSUN -->
           <div class="education-item">
             <div class="column-narrow">
-              <!--3rd column wrap-->
               <h3>California State University, Northridge</h3>
               <p class="date">2019 – 2026 (Expected Graduation: 2026)</p>
             </div>
             <div class="column-wide">
-              <!--3rd column content-->
               <p class="degree">Bachelor of Science - BS, Computer Science</p>
               <p class="grade">Senior</p>
               <p>
@@ -134,14 +139,11 @@
             </div>
           </div>
 
-          <!-- Languages -->
           <div class="education-item">
             <div class="column-narrow">
-              <!--4th column wrap-->
               <h3>Languages</h3>
             </div>
             <div class="column-wide">
-              <!--4th column content-->
               <div class="language-item">
                 <p>
                   <strong>English</strong> - Native or bilingual proficiency
@@ -155,27 +157,29 @@
             </div>
           </div>
         </div>
-        <!-- end content-wrap -->
       </section>
     </main>
 
-    <!-- FOOTER  -->
-    <footer>
+    <!-- FOOTER -->
+    <footer id="contact">
       <div class="content-wrap">
-        <!-- 5th content-wrap -->
-        <h2>Contact Me!</h2>
+        <h2>Contact</h2>
         <div class="contact-links">
-          <a href="mailto:annette.ayzman.835@my.csun.edu"
-            >annette.ayzman.835@my.csun.edu</a
-          >
-          <a href="https://www.linkedin.com/in/annette-ayzman" target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/femsigh" target="_blank">GitHub</a>
+          <a href="mailto:annette.ayzman.835@my.csun.edu">
+            <i class="fas fa-envelope"></i> annette.ayzman.835@my.csun.edu
+          </a>
+          <a href="mailto:annette.ayzman@gmail.com">
+            <i class="fas fa-envelope"></i> annette.ayzman@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/annette-ayzman" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/femsigh" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
         <p>Copyright 2026 by Annette Ayzman</p>
       </div>
-      <!-- last content-wrap -->
     </footer>
   </body>
 </html>
